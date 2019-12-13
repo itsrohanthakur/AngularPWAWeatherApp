@@ -1,0 +1,9 @@
+.app-weather-description {
+  margin: 10px;
+  padding: 10px;
+
+  &__title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
