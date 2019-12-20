@@ -27,7 +27,8 @@
               "src/assets",
               "src/manifest.json",
               "src/manifest.json",
-              "src/manifest.json"
+              "src/manifest.json",
+              "src/manifest.webmanifest"
             ],
             "styles": [
               {
@@ -54,7 +55,8 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
-              "serviceWorker": true
+              "serviceWorker": true,
+              "ngswConfigPath": "ngsw-config.json"
             }
           }
         },
@@ -90,8 +92,7 @@
               "src/favicon.ico",
               "src/assets",
               "src/manifest.json",
-              "src/manifest.json",
-              "src/manifest.json"
+              "src/manifest.webmanifest"
             ]
           }
         },
