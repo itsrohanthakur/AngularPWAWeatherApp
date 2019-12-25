@@ -4,45 +4,58 @@
 
   &__title {
     margin: 10px;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: bold;
+    text-align: center;
   }
 
   &__coordinates {
     margin: 10px;
-    font-size: 20px;
+    font-size: 12px;
     color: #666666;
+    text-align: center;
+  }
+  &__forecastdate{
+    font-size: 25px;
+    text-align: center;
   }
 
   &__weather {
     margin: 10px;
     font-size: 20px;
+   
 
     &-item {
       margin: 10px;
       display: flex;
+      justify-content: center;
       align-items: center;
 
       &-text {
         margin: 10px;
+        font-size: 30px;
 
         &_descr {
           font-size: 15px;
           color: #666666;
         }
       }
+
+     
     }
   }
 
   &__info {
     margin: 10px;
-    font-size: 15px;
+    font-size: 30px;
     color: #999999;
+    text-align: center;
   }
 
   &__wind {
     margin: 10px;
-    font-size: 15px;
+    font-size: 25px;
     color: #999999;
+    text-align: center;
   }
 }

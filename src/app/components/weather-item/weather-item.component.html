@@ -1,13 +1,13 @@
 <div *ngIf="weatherData" class="app-weather-item">
   <div *ngIf="weatherData.name && weatherData.sys.country" class="app-weather-item__title">
-    Location: {{weatherData.name}}, {{weatherData.sys.country}}
+    {{weatherData.name}}, {{weatherData.sys.country}}
   </div>
 
   <div *ngIf="weatherData.coord" class="app-weather-item__coordinates">
     Longitude: {{weatherData.coord.lon}}, Latitude: {{weatherData.coord.lat}}
   </div>
 
-  <div *ngIf="weatherData.dt_txt" class="app-weather-item__coordinates">
+  <div *ngIf="weatherData.dt_txt" class="app-weather-item__forecastdate">
     {{weatherData.dt_txt}}
   </div>
 
@@ -17,15 +17,13 @@
       <span class="app-weather-item__weather-item-text">
         {{weatherItem.main}}
       </span>
-      <span class="app-weather-item__weather-item-text app-weather-item__weather-item-text_descr">
-        {{weatherItem.description}}
-      </span>
+     
     </div>
   </div>
 
   <div class="app-weather-item__info">
     <div>
-      Temperature: {{(weatherData.main.temp - 273).toFixed(1)}} Pressure: {{weatherData.main.pressure}} hpa
+      Temperature: {{(weatherData.main.temp - 273).toFixed(1)}} &#8451;
     </div>
     <div>
       Humidity: {{weatherData.main.humidity}}%

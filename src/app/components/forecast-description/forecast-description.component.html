@@ -1,7 +1,9 @@
-<div class="app-forecast-description">
+<div class="app-forecast-description" style="text-align: center !important;">
   <ng-template [ngIf]="forecastData && forecastData.list">
-      <app-weather-item *ngFor="let weatherData of forecastData.list"
+      <app-weather-item *ngFor="let weatherData of forecastData.list.slice(foreCastVar,foreCastVar+1)"
         [weatherData]="weatherData">
       </app-weather-item>
   </ng-template>
+  <button mat-raised-button color="primary" [disabled]="foreCastVar==0" (click)="navForecast('desc')">Previous Day</button> &nbsp;
+  <button mat-raised-button color="primary" [disabled]="foreCastVar== forecastData?.list.length-1"(click)="navForecast('inc')">Next Day</button>
 </div>

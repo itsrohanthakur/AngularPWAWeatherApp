@@ -28,7 +28,7 @@ $citiesListWidth: 300px;
   }
 
   &__add-city-button {
-    position: absolute;
+    position: sticky;
     right: 50px;
     bottom: 50px;
   }

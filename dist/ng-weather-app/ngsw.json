@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1576858822514,
+  "timestamp": 1576862200748,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -11,6 +11,7 @@
         "/index.html",
         "/main-es2015.94887efa23ba70110346.js",
         "/main-es5.94887efa23ba70110346.js",
+        "/manifest.webmanifest",
         "/polyfills-es2015.25ff13674b3056b14f77.js",
         "/polyfills-es5.1d54f541a04fcdeb03c0.js",
         "/runtime-es2015.edb2fcf2778e7bf1d426.js",
@@ -56,9 +57,10 @@
     "/fontawesome-webfont.af7ae505a9eed503f8b8.woff2": "d6f48cba7d076fb6f2fd6ba993a75b9dc1ecbf0c",
     "/fontawesome-webfont.b06871f281fee6b241d6.ttf": "13b1eab65a983c7a73bc7997c479d66943f7c6cb",
     "/fontawesome-webfont.fee66e712a8a08eef580.woff": "28b782240b3e76db824e12c02754a9731a167527",
-    "/index.html": "7ae9e70199254db704d8aebd78a4bc4b289e1643",
+    "/index.html": "272ee276fd96c8cc1b25270f693b97d3ae88e750",
     "/main-es2015.94887efa23ba70110346.js": "569cdd10eccec8a5fb568e7a2b8bea3a2030adab",
     "/main-es5.94887efa23ba70110346.js": "4cc159f044d989863ebffd087c0ce0dabbe42997",
+    "/manifest.webmanifest": "b27f5d9311eab479078c0e424f719b7c83105aaa",
     "/polyfills-es2015.25ff13674b3056b14f77.js": "8d657a1a62b4a0583fdebe73e9b4203b5d20657e",
     "/polyfills-es5.1d54f541a04fcdeb03c0.js": "0e09f80e331fffd94b85684d05607d7aa9e40fb7",
     "/runtime-es2015.edb2fcf2778e7bf1d426.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",

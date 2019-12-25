@@ -8,9 +8,17 @@ import { IForecast } from '../../interfaces';
 })
 export class ForecastDescriptionComponent implements OnInit {
   @Input() public forecastData: IForecast;
-
   constructor() { }
-
+  foreCastVar:number=0;
   ngOnInit() {
+    
+  }
+  navForecast(type){
+    if(type=='desc'){
+      this.foreCastVar--;
+    }
+    else{
+      this.foreCastVar++;
+    }
   }
 }

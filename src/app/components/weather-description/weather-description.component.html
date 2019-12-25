@@ -1,10 +1,19 @@
-<div class="app-weather-description">
-  <h2 class="app-weather-description__title">
-    Current weather:
-  </h2>
+<mat-card class="app-weather-description__current-weather">
+  <mat-card-title class="app-weather-description__current-weather__title">
+    Current Weather
+  </mat-card-title>
+<mat-card>
   <app-weather-item [weatherData]="weatherData"></app-weather-item>
-  <h2 class="app-weather-description__title">
-    Forecast:
-  </h2>
-  <app-forecast-description [forecastData]="forecastData"></app-forecast-description>
-</div>
+</mat-card>
+
+</mat-card>
+  
+  
+  <mat-card class="app-weather-description__current-weather">
+    <mat-card-title class="app-weather-description__current-weather__title">
+      Forecast
+    </mat-card-title>
+    <app-forecast-description [forecastData]="forecastData"></app-forecast-description>
+
+  </mat-card>
+  
