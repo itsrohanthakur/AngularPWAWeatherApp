@@ -1,6 +1,13 @@
 <div class="app-main">
   <mat-toolbar color="primary" class="app-main__navbar">
     <a mat-button> Weather By Rohan </a>
+    <mat-slide-toggle
+    class="dark-mode-toggle"
+    [checked]="isDarkTheme"
+    (change)="toggleDarkTheme($event.checked)"
+    >
+  Dark Mode
+</mat-slide-toggle>
   </mat-toolbar>
 
   <div class="container">

@@ -1,8 +1,7 @@
-<div [class.dark-theme]="isDarkTheme">
+<div [ngClass]="{'dark-theme': isDarkTheme}">
     <app-modal></app-modal>
-
-    <app-main (isDark)="changeTheme($event)"></app-main>
     
-    
+    <app-main [ngClass]="{'dark-theme': isDarkTheme}"></app-main>
+   
 </div>
 

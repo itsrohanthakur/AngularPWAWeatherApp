@@ -1,5 +1,6 @@
+import { ThemeChangeService } from './../../services/theme-change.service';
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Subscription } from 'rxjs';
+import { Subscription, Observable } from 'rxjs';
 import { CitySelectorComponent } from '../city-selector/city-selector.component';
 import { CitiesService, ModalService, WeatherService} from '../../services';
 import { IWeatherData, ICoordinates } from '../../interfaces';
@@ -12,13 +13,20 @@ import { IWeatherData, ICoordinates } from '../../interfaces';
 export class MainComponent implements OnInit, OnDestroy {
   private subscriptions: Subscription[] = [];
   private weatherSubscription: Subscription;
+  isDarkTheme:Observable<Boolean>;
 
   constructor(private modalService: ModalService,
     private citiesService: CitiesService,
-    private weatherService: WeatherService) { }
+    private weatherService: WeatherService,
+    private themeChangeService: ThemeChangeService) { }
 
   ngOnInit() {
     this.listenModalResults();
+    this.isDarkTheme = this.themeChangeService.isDarkTheme;
+
+  }
+  toggleDarkTheme(checked:Boolean){
+    this.themeChangeService.setDarkTheme(checked);
   }
 
   public showCitySelector(): void {

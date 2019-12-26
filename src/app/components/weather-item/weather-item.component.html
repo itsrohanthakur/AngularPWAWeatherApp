@@ -23,16 +23,18 @@
 
   <div class="app-weather-item__info">
     <div>
-      Temperature: {{(weatherData.main.temp - 273).toFixed(1)}} &#8451;
+      <span class="app-weather-item__heading">Temperature:</span>{{(weatherData.main.temp - 273).toFixed(1)}} &#8451;
     </div>
     <div>
-      Humidity: {{weatherData.main.humidity}}%
+      <span class="app-weather-item__heading">Humidity:</span>{{weatherData.main.humidity}}%
     </div>
   </div>
 
   <div class="app-weather-item__wind">
     <div>
-      Wind speed: {{weatherData.wind.speed}} m/s Wind deg: {{weatherData.wind.deg}}°
+      <span class="app-weather-item__heading">Wind Speed:</span> 
+      {{weatherData.wind.speed}} m/s 
+      <span class="app-weather-item__heading">Wind Direction:</span> {{weatherData.wind.deg}}°
     </div>
   </div>
 

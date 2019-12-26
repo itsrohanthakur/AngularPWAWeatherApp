@@ -9,6 +9,7 @@ $citiesListWidth: 300px;
 
   &__navbar {
     flex: 0 0 auto;
+    justify-content: flex-end;
   }
 
   &__container {
@@ -31,5 +32,10 @@ $citiesListWidth: 300px;
     position: sticky;
     right: 50px;
     bottom: 50px;
+    width: 60px;
   }
+}
+.dark-mode-toggle{
+  font-size: 12px;
+
 }
