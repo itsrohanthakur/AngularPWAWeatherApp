@@ -25,6 +25,7 @@ import {
   ForecastDescriptionComponent
 } from './components';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     CitiesListComponent,
     WeatherDescriptionComponent,
     WeatherItemComponent,
-    ForecastDescriptionComponent
+    ForecastDescriptionComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
